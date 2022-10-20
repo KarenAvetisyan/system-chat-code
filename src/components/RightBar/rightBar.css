@@ -1,0 +1,29 @@
+
+.sc-right-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 73px;
+    height: 100%;
+    background: #F6F8FC;
+    border: 1px solid #EAEAEA;
+    z-index: 9999;
+    padding-bottom: 4px;
+}
+
+
+/* medias  */
+@media only screen and (max-width: 767px) {
+    .sc-right-bar{
+      width: calc(100% - 50px);
+      top: auto;
+      right: 0;
+      bottom: 0;
+      height: 50px;
+    }
+}
+
+

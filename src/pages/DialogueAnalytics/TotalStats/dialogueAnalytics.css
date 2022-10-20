@@ -1,0 +1,100 @@
+.sc-dialog{
+	padding-left: 76px;
+	padding-right: 73px;
+}
+
+.sc-dialog .head-info{
+	background: #ECF1F7;
+	display: inline-block;
+	width: calc(100% + 80px);
+	margin-left: -40px;
+	padding: 32px 40px 24px 40px;
+
+}
+
+.sc-dialog .dialog-nav{
+	margin-bottom: 0;
+	padding: 4px 4px;
+	display: inline-block;
+	background: #FFFFFF;
+	border-radius: 10px;
+	list-style: none;
+	margin-top: 18px;
+}
+
+.sc-dialog .dialog-nav li{
+	display: inline-block;
+	margin: 4px 4px;
+}
+
+.sc-dialog .dialog-nav a{
+	padding: 5px 14px 7px 14px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #222F44;
+	font-family: var(--hr);
+	text-decoration: none;
+	border-radius: 6px;
+	display: inline-block;
+	transition: 0.2s;
+}
+
+.sc-dialog .dialog-nav a:hover{
+	background: #006AE4;
+	color: #fff;
+}
+
+.sc-dialog .dialog-nav .active{
+	background: #006AE4;
+	color: #fff;
+}
+
+
+.sc-dialog .dialog-content{
+	padding: 32px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .sc-dialog{
+		padding-left: 50px;
+		padding-right: 0px;
+	}
+
+	.sc-dialog .dialog-content {
+		padding: 25px 0px 70px;
+	}
+
+	.sc-dialog .head-info{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		padding: 32px 20px 24px 20px;
+	}
+    
+}
+
+@media only screen and (max-width: 576px) {
+
+    .sc-dialog{
+		padding-left: 50px;
+		padding-right: 0px;
+	}
+
+	.sc-dialog .head-info{
+		width: calc(100% + 20px);
+		margin-left: -10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.sc-dialog .dialog-nav a{
+		padding: 4px 10px 4px 10px;
+		font-size: 10px;
+		line-height: 14px;
+	}
+    
+}

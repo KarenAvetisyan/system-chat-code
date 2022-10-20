@@ -1,0 +1,26 @@
+
+.header{
+    height: 67px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 76px;
+    padding-right: 73px;
+    margin: auto;
+    background-color: #fff;
+    z-index: 999;
+    outline: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+    .header{
+        padding-left: 50px;
+        padding-right: 0px;
+        height: 50px;
+    }
+}

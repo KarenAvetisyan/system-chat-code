@@ -1,0 +1,289 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* helvetica_regular */
+@font-face {
+	font-family: "helvetica_regular";
+	src: url("./fonts/helvetica_regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* helvetica_bold */
+@font-face {
+	font-family: "helvetica_bold";
+	src: url("./fonts/helvetica_bold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root{
+  --hr: "helvetica_regular";
+  --hb: "helvetica_bold";
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding-top: 67px;
+  margin: auto;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin-top: 0;
+}
+
+h1{
+	font-family: var(--hr);
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 47px;
+	letter-spacing: -0.02em;
+	color: #000000;
+	margin: 0;
+}
+
+.lg-col-50{
+	width: 50%;
+	display: inline-block;
+}
+
+.col-50{
+	width: 50%;
+	display: inline-block;
+}
+
+.px-25{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.lg-col-100{
+	width: 100%;
+	display: inline-block;
+}
+
+.right-bar-position{
+    display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 3px;
+    width: 70px;
+    height: 100%;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1294px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* chart styles  */
+.chart-row{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+ .single-chart{
+    display: inline-block;
+    width: 100%;
+    max-width: 582px; 
+    background: #FFFFFF;
+    position: relative; 
+    min-height: 383px;
+    margin-bottom: 32px;
+}
+
+.single-chart canvas{
+    margin-top: -15px;
+}
+
+.single-chart .chart-bar{
+    display: inline-block;
+    width: 100%;
+    max-width: 582px;
+    height: 233px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    padding: 0px 5px 32px 3px;
+}
+
+.single-chart h4{
+    font-family: var(--hb);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #202020;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.single-chart h4 a{
+    color: #006AE4;
+    font-family: var(--hb);
+    text-decoration: none;
+    text-underline-position: under;
+}
+
+.single-chart h4 a:hover{
+    text-decoration: underline;
+}
+
+.single-chart .chart-global-stats span{
+    font-family: var(--hr);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+    color: #454545;
+}
+
+.single-chart .chart-title{
+    font-family: var(--hr);
+    font-size: 14px;
+    line-height: 19px;
+    color: #454545;
+    margin-top: 12px;
+}
+
+.single-chart .chart-global-stats p{
+    font-family: var(--hr);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #7F7F7F;
+}
+
+.single-chart .bar-tip {
+    max-width: 582px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 14px;
+    font-family: var(--hr);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.single-chart .bar-tip span{
+    width: 13px;
+    height: 13px;
+    margin-right: 4px;
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .lg-col-50{
+        width: 100%;
+    }
+    .single-chart{
+        max-width: 100%;
+        min-height: auto;
+    }
+    .single-chart .chart-bar{
+        max-width: 100%;
+        height: auto;
+        padding: 0px 5px 17px 3px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .container{
+		padding-left: 20px;
+    	padding-right: 20px;
+	}
+
+    .wrapper{
+        padding-top: 50px;
+    }
+
+    h1{
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    .right-bar-position{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        top: auto;
+        z-index: 9999;
+        height: 50px;
+        width: 100%;
+    }
+
+    .single-chart {
+        margin: 10px 0;
+    }
+
+    .single-chart h4{
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .single-chart .chart-global-stats span{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+    .single-chart .chart-global-stats .stat{
+        padding-right: 5px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .single-chart .chart-title{
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 0;
+    }
+
+    .single-chart .chart-bar{
+        padding: 0px 5px 5px 3px;
+    }
+
+    .chart-row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .chart-row .px-25{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+	.container{
+		padding-left: 10px;
+    	padding-right: 10px;
+	}
+
+    
+    
+}

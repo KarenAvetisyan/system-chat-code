@@ -1,0 +1,79 @@
+
+.right-bar-elements{
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+
+.right-bar-elements li{
+    width: 100%;
+    min-height: 67px;
+    display: inline-block;
+}
+
+
+.right-bar-elements li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    transition: 0.1s;
+    outline: none;
+}
+
+.right-bar-elements li a.active{
+    background: #EEEFF2;
+}
+
+.right-bar-elements li a.active path{
+    fill: #006AE4;
+}
+
+.right-bar-elements li:hover a{
+    background: #EEEFF2;
+}
+
+.right-bar-elements li span{
+    width: 100%;
+    display: inline-block;
+    font-family: var(--hr);
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .right-bar-elements {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-bar-elements li{
+        height: 50px;
+        width: auto;
+        min-height: auto;
+    }
+    .right-bar-elements li span{
+        font-size: 8px;
+        line-height: 12px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .right-bar-elements li a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-bar-elements li svg{
+        height: 15px;
+    }
+}

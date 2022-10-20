@@ -1,0 +1,103 @@
+
+.dialog-nav-options{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.dialog-nav-options ul{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dialog-nav-options ul li{
+    display: flex;
+    margin-right: 18px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.dialog-nav-options ul li:hover a span {
+    background: #d3d3d3;
+}
+
+.dialog-nav-options ul li img{
+    max-width: 19px;
+    margin-right: 9px;
+    margin-left: 5px;
+}
+
+.dialog-nav-options ul a {
+    text-decoration: none;
+    background: #F3F4F5;
+    font-family: var(--hr);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #383838;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 4px 4px 4px 4px;
+}
+
+.dialog-nav-options ul a span{
+    background: #EAEBEC;
+    border-radius: 6px;
+    padding: 5px 8px 7px 8px;
+    display: flex;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.dialog-nav-options ul a .caret{
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: 8px;
+    border-top: 5px solid #1C1B1F;
+    
+}
+.dialog-nav-options .apply-filter{
+    color: #fff;
+    background: #006AE4;
+    border-radius: 6px;
+    transition: 0.1s;
+    padding: 5px 14px 7px 14px;
+    text-align: center;
+    justify-content: center;
+}
+
+.dialog-nav-options .apply-filter:hover{
+    background: #0d57ac;
+}
+
+@media only screen and (max-width: 767px) {
+    .dialog-nav-options {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dialog-nav-options ul li {
+        margin-right: 1px;
+        width: 49%;
+    }
+    .dialog-nav-options ul a {
+        font-size: 10px;
+        line-height: 10px;
+        border-radius: 4px;
+        width: 100%;
+    }
+    .dialog-nav-options ul a span {
+        border-radius: 4px;
+        width: 100%;
+    }
+    .dialog-nav-options ul a .caret{
+        margin-left: auto;
+    }
+}
